@@ -1,0 +1,15 @@
+Dim Srange as Range
+
+'「A1:H12」に対象のセルを記述
+'「出」に入力したい文字列を記述
+
+Set Srange = Application.Intersect(Target, Range("A1:H12"))
+
+If Not Srange Is Nothing Then
+    If Srange.Value = "" Then
+        Srange.Value = "出"
+    Else
+        Srange.Value = ""
+    End If
+Cancel = True
+Set Srange = Nothing
