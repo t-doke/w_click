@@ -11,5 +11,8 @@ If Not Srange Is Nothing Then
     Else
         Srange.Value = ""
     End If
+End If
+
 Cancel = True
+
 Set Srange = Nothing
